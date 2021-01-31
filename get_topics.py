@@ -15,9 +15,13 @@ def recommendation(user_cat):
         # if same category as requested, add to books
         for cat in categories:
             print(cat)
-
             if user_cat in cat:
                 books.append(entry)
+
+        if len(books) < 1:
+            for cat in categories:
+                if cat in user_cat:
+                    books.append(entry)
     file.close()
 
     # if we couldn't find any in the same category:

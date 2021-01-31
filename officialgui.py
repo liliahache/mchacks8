@@ -93,7 +93,7 @@ def get_book_rec(user_input):
     return book_rec
     
 # start of Jere Xu's code, from his github: https://github.com/jerrytigerxu/Simple-Python-Chatbot"
-# jerrytigerxu
+# jerrytigerxu's code was used a a template, and we modified the look of it slightly
 
 def send():
     msg = EntryBox.get("1.0",'end-1c').strip()
@@ -105,7 +105,7 @@ def send():
         ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
 
         res = get_book_rec(msg)
-        ChatLog.insert(END, "Bot: " + res + '\n\n')
+        ChatLog.insert(END, "Alexandria: " + res + '\n\n')
 
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
