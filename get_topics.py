@@ -14,7 +14,6 @@ def recommendation(user_cat):
         entry = [author, title, categories]
         # if same category as requested, add to books
         for cat in categories:
-            print(cat)
             if user_cat in cat:
                 books.append(entry)
 
